@@ -1,0 +1,32 @@
+# Third-Party Notices
+
+This repository contains references to, or sample projects compatible with, the following third-party tools and libraries. Their respective licenses and trademarks remain with their owners.
+
+## Industrial Automation Tools
+
+- **GX Works** / **MELSEC** — trademarks of Mitsubishi Electric Corporation.
+- **TIA Portal** / **SIMATIC** / **S7** — trademarks of Siemens AG.
+- The sample projects in `examples/` are sanitized, minimal fixtures generated for public demonstration and do not contain proprietary vendor bytes or customer data.
+
+## Open-Source Libraries and Tools Referenced
+
+The project ecosystem has studied or referenced the following open-source libraries for PLC protocol and file-format research. Their original licenses apply to their own code:
+
+- [awlsim](https://github.com/mhatter/awlsim) — Siemens AWL/SCL simulator and toolchain.
+- [DotNetSiemensPLCToolBoxLibrary](https://github.com/dotnetprojects/DotNetSiemensPLCToolBoxLibrary) — .NET library for Siemens S7 communication and project handling.
+- [HslCommunication](https://github.com/dathlin/HslCommunication) — .NET industrial communication library.
+- [rz-libmc7](https://github.com/romanetz/rz-libmc7) — Siemens S7 MC7 binary research utilities.
+- [awltool](https://github.com/romanetz/awltool) — AWL tooling.
+- [Stp7Toolbox](https://github.com/romanetz/Stp7Toolbox) — STEP 7 research toolbox.
+- [ladder_drive](https://github.com/ladder-drive) / [ladder_converter](https://github.com/ladder-converter) — ladder-logic conversion research.
+- [fx5_mbtcpserver](https://github.com/fx5-mbtcpserver) — Mitsubishi FX5 Modbus TCP sample server.
+- [go-mcprotocol](https://github.com/go-mcprotocol) — Go implementation of MELSEC communication protocol.
+- [Mitsubishi-protocol-wireshark-plugin](https://github.com/Mitsubishi-protocol-wireshark-plugin) — Wireshark dissector for Mitsubishi protocols.
+
+## Fonts and Design Assets
+
+The product UI design references open-source or system fonts and publicly documented color/typography guidelines. No proprietary font files are distributed in this repository.
+
+## Disclaimer
+
+PLCvibeCoding is an independent project and is not affiliated with, endorsed by, or sponsored by Mitsubishi Electric Corporation, Siemens AG, or any other industrial automation vendor. All trademarks are property of their respective owners.

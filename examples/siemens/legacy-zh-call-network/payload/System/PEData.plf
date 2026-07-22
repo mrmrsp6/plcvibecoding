@@ -1,0 +1,23 @@
+<SimpleAccess><ID RID="101" N="启动允许"/><C NID="1" UID="1"/><AO N="启动允许"/><SSD AO="0"/><SAD R="Input"/><TD T="Bool"/></SimpleAccess>
+<SimpleAccess><ID RID="102" N="运行反馈"/><C NID="1" UID="2"/><AO N="运行反馈"/><SSD AO="1"/><SAD R="Input"/><TD T="Bool"/></SimpleAccess>
+<SimpleAccess><ID RID="103" N="运行命令"/><C NID="1" UID="3"/><AO N="运行命令"/><SSD AO="8"/><SAD R="Output"/><TD T="Bool"/></SimpleAccess>
+<Instruction><ID RID="201" N="UC_公共调用"/><C NID="1" UID="4" AK="Call"/></Instruction>
+<FlgNet>
+  <Parts>
+    <Part UId="1" Gate="Contact" />
+    <Part UId="2" Gate="Contact" />
+    <Part UId="3" Gate="Coil" />
+    <LRef UId="4" RefId="201" />
+    <Part UId="5" Gate="BLD" />
+  </Parts>
+  <Wires>
+    <Wire><Powerrail/><PCon UId="1" PinName="in"/></Wire>
+    <Wire><PCon UId="1" PinName="out"/><PCon UId="2" PinName="in"/></Wire>
+    <Wire><PCon UId="2" PinName="out"/><PCon UId="3" PinName="in"/><PCon UId="4" PinName="en"/><PCon UId="5" PinName="in"/></Wire>
+    <Wire><PCon UId="3" PinName="operand"/><ORef UId="30" RefId="103"/></Wire>
+    <Wire><PCon UId="1" PinName="operand"/><ORef UId="31" RefId="101"/></Wire>
+    <Wire><PCon UId="2" PinName="operand"/><ORef UId="32" RefId="102"/></Wire>
+    <Wire><PCon UId="4" PinName="IN1"/><ORef UId="33" RefId="101"/></Wire>
+    <Wire><PCon UId="4" PinName="Q"/><ORef UId="34" RefId="103"/></Wire>
+  </Wires>
+</FlgNet>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "PLC Public Workflow Guard"
+  short_description: "Generic guardrails for public PLC analysis and patch planning."
+  default_prompt: "Use $plc-public-workflow-guard to review this PLC task with conservative public guardrails."
+
+policy:
+  allow_implicit_invocation: true
